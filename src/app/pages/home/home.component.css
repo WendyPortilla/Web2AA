@@ -1,0 +1,120 @@
+/* Importar la fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos Generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #000000; /* Texto negro */
+    background-color: #f0f0f0; /* Fondo claro */
+}
+
+/* Estilos para la sección superior - Promoción */
+.bg-dark {
+    background-color: #000000; /* Fondo negro */
+}
+
+.text-white {
+    color: #ffffff; /* Texto blanco */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.py-4 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+h2, p {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos para la sección principal - Producto Destacado */
+.container {
+    margin: 3rem auto;
+}
+
+img.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    font-size: 2rem;
+    color: #e91e63; /* Rosa vibrante */
+}
+
+p {
+    color: #000000; /* Texto negro */
+}
+
+.text-primary {
+    color: #e91e63; /* Rosa vibrante */
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #e91e63; /* Rosa vibrante */
+    border-color: #e91e63; /* Rosa vibrante */
+    color: #ffffff; /* Texto blanco */
+}
+
+.btn-primary:hover {
+    background-color: #c2185b; /* Rosa más oscuro */
+    border-color: #c2185b; /* Rosa más oscuro */
+}
+
+/* Estilos para el Carrusel de Productos */
+.carousel-inner img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-caption h5 {
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.carousel-caption p {
+    background-color: #fce4ec; /* Fondo rosa claro */
+    color: #000000; /* Texto negro */
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #e91e63; /* Rosa vibrante */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #c2185b; /* Rosa más oscuro */
+}
+
+/* Estilos para el Footer */
+footer {
+    background-color: #000000; /* Negro */
+    color: #ffffff; /* Texto blanco */
+    padding: 2rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #ffffff; /* Texto blanco */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #f8bbd0; /* Rosa muy claro */
+}

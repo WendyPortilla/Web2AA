@@ -1,0 +1,48 @@
+.error-container {
+    padding: 50px;
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
+  
+  .error-title {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+    color: #dc3545; /* Rojo */
+  }
+  
+  .error-message {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  
+  .error-suggestion {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+  
+  .error-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .error-links li {
+    margin: 0.5em 0;
+  }
+  
+  .error-links a {
+    color: #007bff; /* Azul */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .error-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos para la imagen graciosa */
+  .error-image {
+    max-width: 100%;
+    height: auto;
+  }
+  

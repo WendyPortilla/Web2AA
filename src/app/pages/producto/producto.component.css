@@ -1,0 +1,114 @@
+/* Importar la fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos Generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #000000; /* Texto negro */
+    background-color: #f0f0f0; /* Fondo claro */
+}
+
+/* Estilos para el breadcrumb */
+.breadcrumb {
+    background-color: #fce4ec; /* Fondo rosa claro */
+    color: #000000; /* Texto negro */
+    border-radius: 10px;
+    padding: 0.75rem 1.25rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #e91e63; /* Rosa vibrante para el separador */
+}
+
+.breadcrumb-item a {
+    color: #e91e63; /* Rosa vibrante */
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: #000000; /* Texto negro */
+}
+
+/* Estilos para la imagen del producto */
+.position-relative {
+    position: relative;
+}
+
+.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.badge {
+    background-color: #e91e63; /* Rosa vibrante */
+    color: #ffffff; /* Texto blanco */
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+/* Estilos para la sección del producto */
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #e91e63; /* Rosa vibrante */
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: #000000; /* Texto negro */
+}
+
+h4 span {
+    color: #4caf50; /* Verde para el precio */
+}
+
+p {
+    color: #000000; /* Texto negro */
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.btn-secondary {
+    background-color: #e91e63; /* Rosa vibrante */
+    border-color: #e91e63; /* Rosa vibrante */
+    color: #ffffff; /* Texto blanco */
+}
+
+.btn-secondary:hover {
+    background-color: #c2185b; /* Rosa más oscuro */
+    border-color: #c2185b; /* Rosa más oscuro */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #000000; /* Negro */
+    color: #ffffff; /* Texto blanco */
+    padding: 2rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer-social-icons {
+    margin-top: 1rem;
+}
+
+.footer-social-icons a {
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin: 0 0.7rem;
+    transition: color 0.3s;
+}
+
+.footer-social-icons a:hover {
+    color: #f8bbd0; /* Rosa muy claro */
+}

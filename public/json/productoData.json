@@ -1,0 +1,50 @@
+[
+  {  
+    "id": 1,
+    "nombre": "Vestido",
+    "precio": 10.9,
+    "imagen": "https://www.directorio593.com/custom/domain_1/image_files/1009_photo_20647.jpg",
+    "tipo": 1,
+    "descripcion": "Este vestido combina elegancia y comodidad en una prenda diseñada para brillar en eventos formales y ocasiones especiales. Confeccionado con un material suave y de alta calidad, el vestido ofrece una sensación de lujo y confort que se mantiene durante todo el día. Su diseño atemporal presenta un corte que realza la figura de manera favorecedora, sin comprometer la comodidad. Ideal para bodas, galas, cenas elegantes o cualquier celebración, este vestido está disponible en varios colores sofisticados que se adaptan a diferentes estilos y preferencias. La prenda está diseñada para un ajuste perfecto y una apariencia impecable, con acabados meticulosos que aportan un toque de distinción. Con su longitud adaptable y detalles sutiles, como un escote elegante o una cintura definida, este vestido permite personalizar tu look según la ocasión. La versatilidad del diseño permite combinarlo con accesorios llamativos o mantenerlo simple para una elegancia discreta, garantizando que te veas y te sientas excepcional en cualquier evento."
+  },
+  {  
+    "id": 2,
+    "nombre": "Tacones",
+    "precio": 38.7,
+    "imagen": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/heels-women-sandals-fashion-sale-flyer-design-template-590f867412d069350300d9c14a95c98c_screen.jpg?ts=1660810409",
+    "tipo": 2,
+    "descripcion": "Estos tacones altos modernos son una pieza imprescindible en el armario de cualquier amante de la moda. Su diseño elegante y sofisticado se adapta perfectamente a cualquier atuendo, desde trajes de oficina hasta vestidos de noche. Fabricados con materiales de alta calidad, estos tacones no solo ofrecen un estilo excepcional sino también comodidad y durabilidad. La altura del tacón está cuidadosamente calculada para proporcionar un soporte adecuado sin comprometer la comodidad, permitiendo llevarlos durante largas horas sin molestias. Además, el diseño estilizado de los tacones y los detalles refinados realzan la elegancia del calzado, convirtiéndolos en una opción versátil tanto para ocasiones especiales como para uso diario. El acabado de alta calidad y la estructura resistente aseguran que estos tacones mantengan su apariencia y funcionalidad a lo largo del tiempo. Ideales para eventos formales, cenas elegantes o cualquier ocasión en la que desees añadir un toque de glamour a tu look."
+  },
+  {  
+    "id": 3,
+    "nombre": "Bléiser",
+    "precio": 27.0,
+    "imagen": "https://i.pinimg.com/474x/08/5e/4d/085e4dc1b9c8810b99fd5ebb2ba79b09.jpg",
+    "tipo": 3,
+    "descripcion": "Este bléiser clásico es una prenda clave para quienes buscan un look profesional y sofisticado. Su diseño entallado y elegante se adapta perfectamente a diferentes ocasiones, desde reuniones de trabajo hasta eventos formales. Confeccionado con un tejido de alta calidad, el bléiser ofrece un ajuste cómodo y favorecedor, con detalles cuidadosamente elaborados que aportan un toque de distinción. El corte clásico del bléiser facilita su combinación con camisas, blusas o incluso suéteres, ofreciendo una versatilidad que permite adaptarse a diferentes estilos y necesidades. Los acabados finos y los detalles de diseño, como los botones elegantes y las costuras precisas, destacan la calidad de la prenda. Ideal para quienes buscan un atuendo que combine profesionalismo y elegancia, este bléiser es una inversión en estilo duradero y versátil."
+  },
+  {  
+    "id": 4,
+    "nombre": "Pantalón de Vestir",
+    "precio": 30.0,
+    "imagen": "https://static.pullandbear.net/2/static2/img/filters/SRA/1030318057.jpg?imwidth=511.875&20240819015706",
+    "tipo": 4,
+    "descripcion": "Este pantalón de vestir es una prenda esencial para cualquier guardarropa profesional. Confeccionado con materiales de alta calidad, ofrece un ajuste cómodo y elegante que es ideal para ocasiones formales o laborales. El diseño del pantalón está pensado para proporcionar una silueta favorecedora y un estilo pulido, con detalles que incluyen una cintura ajustada y perneras rectas que aportan una apariencia clásica y atemporal. La confección meticulosa y el uso de tejidos duraderos aseguran que el pantalón mantenga su forma y su aspecto impecable incluso después de múltiples usos. Versátil y fácil de combinar, este pantalón es perfecto tanto para un día de oficina como para eventos importantes. Su ajuste elegante y la calidad de los materiales garantizan que te verás y te sentirás profesional y seguro en cualquier ocasión."
+  },
+  {  
+    "id": 5,
+    "nombre": "Chaqueta",
+    "precio": 20.0,
+    "imagen": "https://lee.com.ec/wp-content/uploads/AIMG_5026.jpg",
+    "tipo": 5,
+    "descripcion": "Esta chaqueta ligera es ideal para mantenerte abrigado durante los días fríos mientras mantienes un estilo moderno. Confeccionada con un material que proporciona calor sin ser excesivamente pesado, la chaqueta es perfecta para el uso diario y para ocasiones casuales. El diseño moderno incluye bolsillos funcionales que añaden un toque práctico al estilo, permitiendo llevar tus esenciales de manera segura. La chaqueta está diseñada con un ajuste que favorece sin ser ajustado, ofreciendo una capa adicional de confort y protección contra el frío. Los detalles en el diseño, como los acabados de calidad y el estilo contemporáneo, aseguran que te veas bien mientras te mantienes abrigado. Ideal para combinar con ropa casual o para un look más desenfadado, esta chaqueta es una adición versátil a tu armario."
+  },
+  {  
+    "id": 6,
+    "nombre": "Sandalia",
+    "precio": 15.0,
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwPOp19gZ4cTQV2f3r_zbEG0g3LS_M4QTftA&s",
+    "tipo": 6,
+    "descripcion": "Esta sandalia combina comodidad y versatilidad, siendo ideal para el verano. Su diseño ligero y aireado permite que tus pies se mantengan frescos en días calurosos, mientras que la suela antideslizante ofrece una tracción segura en diversas superficies. La sandalia está fabricada con materiales duraderos que aseguran un ajuste cómodo y una larga vida útil. Con un estilo simple pero elegante, se adapta a una variedad de atuendos, desde ropa de playa hasta conjuntos casuales. La comodidad adicional proporcionada por la plantilla acolchada y el ajuste ajustable permite un uso prolongado sin molestias. Perfecta para tus actividades diarias durante el verano, esta sandalia ofrece funcionalidad y estilo en cada paso."
+  }
+]

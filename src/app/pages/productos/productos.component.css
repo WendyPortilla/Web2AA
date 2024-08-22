@@ -1,0 +1,94 @@
+/* Importar la fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos Generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #000000; /* Texto negro */
+    background-color: #f0f0f0; /* Fondo claro */
+}
+
+/* Contenedor de Productos */
+.container-fluid {
+    padding: 0 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Estilos para las tarjetas de productos */
+.card {
+    border: none;
+    border-radius: 10px;
+    background-color: #fce4ec; /* Fondo rosa claro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+    border-bottom: 1px solid #ddd;
+}
+
+.card-img-top img {
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    padding: 1.5rem;
+    color: #000000; /* Texto negro */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #000000; /* Texto negro */
+}
+
+.card-footer {
+    padding: 1rem;
+    background-color: #fce4ec; /* Fondo rosa claro */
+    color: #000000; /* Texto negro */
+    border-top: 1px solid #ddd;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #000000; /* Negro */
+    color: #ffffff; /* Texto blanco */
+    padding: 2rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer-social-icons {
+    margin-top: 1rem;
+}
+
+.footer-social-icons a {
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin: 0 0.7rem;
+    transition: color 0.3s;
+}
+
+.footer-social-icons a:hover {
+    color: #f8bbd0; /* Rosa muy claro */
+}

@@ -1,0 +1,137 @@
+/* Importar la fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos Generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #000000; /* Texto negro */
+    background-color: #f0f0f0; /* Fondo claro */
+}
+
+/* Estilos para la imagen de la tienda */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos para las secciones principales */
+.container {
+    padding: 0 15px;
+}
+
+/* Estilos para el encabezado de la sección 'Acerca de Nosotros' */
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #000000; /* Rosa vibrante */
+}
+
+/* Estilos para los párrafos */
+p {
+    color: #000000; /* Texto negro */
+}
+
+/* Estilos para las tarjetas en la sección de testimonios */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fce4ec; /* Fondo rosa claro */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+    padding: 1.5rem;
+    color: #000000; /* Texto negro */
+}
+
+/* Estilos para el botón de la sección de FAQ */
+.btn-link {
+    color: #000000; /* Rosa vibrante */
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    color: #000000; /* Rosa más oscuro */
+    text-decoration: underline;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #e91e63; /* Rosa vibrante */
+    color: #ffffff; /* Texto blanco */
+    padding: 2rem 0;
+}
+
+.footer-social-icons a {
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin: 0 0.7rem;
+    transition: color 0.3s;
+}
+
+.footer-social-icons a:hover {
+    color: #f8bbd0; /* Rosa muy claro */
+}
+
+/* Estilos para el formulario de contacto */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #e91e63; /* Rosa vibrante */
+    box-shadow: none;
+    font-size: 1rem;
+    background-color: #fce4ec; /* Fondo rosa claro */
+    color: #000000; /* Texto negro */
+}
+
+.form-control:focus {
+    border-color: #c2185b; /* Rosa más oscuro */
+    box-shadow: 0 0 0 0.2rem rgba(233, 30, 99, 0.25);
+}
+
+/* Estilos para los textos y encabezados */
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #000000; /* Texto negro */
+}
+
+h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #000000; /* Rosa vibrante */
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: #000000; /* Rosa vibrante */
+}
+
+/* Estilos para el acordeón FAQ */
+.accordion-button {
+    background-color: #fce4ec; /* Fondo rosa claro */
+    color: #000000; /* Texto negro */
+    border: 1px solid #e91e63; /* Rosa vibrante */
+    font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e91e63; /* Rosa vibrante */
+    color: #ffffff; /* Texto blanco */
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(233, 30, 99, 0.5);
+}

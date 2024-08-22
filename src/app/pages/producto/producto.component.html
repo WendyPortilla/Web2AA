@@ -1,0 +1,40 @@
+<div class="container mt-5">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-light p-3 rounded shadow-sm">
+      <li class="breadcrumb-item">
+        <a routerLink="/productos" routerLinkActive="active" class="text-decoration-none text-primary">Productos</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">{{ productos?.nombre }}</li>
+    </ol>
+  </nav>
+
+  <div class="row g-4 mt-4">
+    <div class="col-lg-6">
+      <div class="position-relative">
+        <!-- Ajusta el tamaño de la imagen con clases de Bootstrap y estilos en línea -->
+        <img [src]="productos?.imagen" class="img-fluid rounded shadow-lg" [alt]="productos?.nombre" style="max-width: 100%; height: auto;" />
+        <span class="badge bg-primary position-absolute top-0 start-0 m-3 p-2">Nuevo</span>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <h2 class="mb-3 display-4">{{ productos?.nombre }}</h2>
+      <h4 class="text-muted mb-4">Precio: <span class="text-success">${{ productos?.precio }}</span></h4>
+      <p class="mb-3"><strong>Tipo:</strong> {{ productos?.tipo }}</p>
+      <p class="lead">{{ productos?.descripcion }}</p>
+      
+      <a href="#" class="btn btn-secondary btn-lg mt-4">Volver</a>
+      <br>
+      <a routerLink="/error404" routerLinkActive="active" class="btn btn-secondary btn-lg mt-4">Compra</a>
+      
+
+    </div>
+  </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-light text-center py-4">
+  <div class="container">
+    <p>&copy; 2024 Tienda de Productos. Todos los derechos reservados.</p>
+    <p>Síguenos en:</p>
+  </div>
+</footer>

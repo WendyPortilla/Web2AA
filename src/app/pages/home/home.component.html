@@ -1,69 +1,102 @@
-<div class="container my-5">
-    <!-- Imagen Empresarial -->
-    <div class="text-center">
-        <img src="assets/empresa.jpg" class="img-fluid" alt="Imagen Empresarial">
-    </div>
+<div class="container-fluid px-0">
+  <!-- Sección Superior - Promoción -->
+  <div class="bg-dark text-white text-center py-4">
+    <h2 class="mb-2">"TrendyShop"</h2>
+    
+    
+  </div>
 
-    <!-- Carrusel de Ofertas -->
-    <div id="ofertasCarousel" class="carousel slide my-5" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/oferta1.jpg" class="d-block w-100" alt="Oferta 1">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/oferta2.jpg" class="d-block w-100" alt="Oferta 2">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/oferta3.jpg" class="d-block w-100" alt="Oferta 3">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#ofertasCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#ofertasCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+  <!-- Sección Principal - Producto Destacado -->
+  <div class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-12">
+        <img src="https://www.justretail.news/wp-content/uploads/2024/04/Goteborg-La-Torre-Outlet-04.jpg"class="img-fluid rounded shadow-lg" alt="Producto destacado">
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <h3></h3>
+        <p>Bienvenidos a TrendyShop,
 
-    <!-- Carrusel de Productos -->
-    <div id="productosCarousel" class="carousel slide my-5" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="row">
-                    <div class="col">
-                        <img src="assets/producto1.jpg" class="img-fluid" alt="Producto 1">
-                    </div>
-                    <div class="col">
-                        <img src="assets/producto2.jpg" class="img-fluid" alt="Producto 2">
-                    </div>
-                    <div class="col">
-                        <img src="assets/producto3.jpg" class="img-fluid" alt="Producto 3">
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="row">
-                    <div class="col">
-                        <img src="assets/producto4.jpg" class="img-fluid" alt="Producto 4">
-                    </div>
-                    <div class="col">
-                        <img src="assets/producto5.jpg" class="img-fluid" alt="Producto 5">
-                    </div>
-                    <div class="col">
-                        <img src="assets/producto6.jpg" class="img-fluid" alt="Producto 6">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#productosCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#productosCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+          En TrendyShop, nos enorgullecemos de ofrecer una experiencia de compra excepcional con una cuidada selección de prendas que combinan elegancia, sofisticación y tendencia. Nuestro compromiso es proporcionar a nuestros clientes una moda que no solo refleja las últimas tendencias, sino que también exuda calidad y estilo atemporal.
+          bicados en Quito, nuestro espacio está diseñado para ofrecer un ambiente acogedor y refinado, donde cada visita se convierte en una experiencia de compra placentera. Nuestra colección abarca desde elegantes trajes y vestidos de gala hasta ropa casual y accesorios distintivos, todos elegidos meticulosamente para satisfacer los gustos más exigentes.
+          En TrendyShop, entendemos que cada cliente es único, por lo que ofrecemos un servicio personalizado y atento para ayudarte a encontrar las piezas perfectas que realcen tu estilo individual. Nuestro equipo de expertos en moda está siempre disponible para ofrecer asesoramiento y asistencia, garantizando que cada compra sea satisfactoria y memorable.
+          Explora nuestra colección y descubre cómo TrendyShop puede transformar tu guardarropa con prendas que definen tu personalidad y elevan tu estilo. Agradecemos tu visita y esperamos darte la bienvenida en nuestra tienda.</p>
+        <p class="text-primary h4"></p>
+        <a href="#" class="btn btn-primary">Visitanos</a>
+      </div>
     </div>
+  </div>
+
+  <!-- Sección de Carrusel de Productos -->
+  <div class="container my-5">
+    <h1 class="mb-4 text-success text-center">Nuestros Productos</h1>
+    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div *ngFor="let producto of productos; let isFirst = first" 
+             [ngClass]="{'carousel-item': true, 'active': isFirst}">
+          <img [src]="producto.imagen" class="d-block w-100 rounded shadow-sm" [alt]="producto.nombre">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="bg-dark text-light p-2 rounded">{{ producto.nombre }}</h5>
+            <p *ngIf="producto.precio > 7; else elseTemplate" class="bg-warning text-dark p-2 rounded">Es un producto de alta gama</p>
+            <ng-template #elseTemplate>
+              <p class="bg-info text-dark p-2 rounded">Es un producto asequible</p>
+            </ng-template>
+            <div [ngSwitch]="producto.tipo">
+              <span *ngSwitchCase="'1'" class="badge bg-success">Planta</span>
+              <span *ngSwitchCase="'2'" class="badge bg-warning text-dark">Eléctrico</span>
+              <span *ngSwitchCase="'3'" class="badge bg-danger">Fuego</span>
+              <span *ngSwitchDefault class="badge bg-secondary">Desconocido</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="carousel-caption d-none d-md-block">
+        <a href="/productos" class="btn btn-primary mt-3">Ver todos los productos</a>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.blogdechollos.com/wp-content/uploads/2022/12/Rebajas-de-invierno-en-Polo-CLub-rebajas-en-ropa-de-marca-ofertas-en-ropa-y-calzado-chollo.jpg" class="d-block w-100" alt="Oferta 1">
+    </div>
+    <div class="carousel-item">
+      <img src="https://static1.tiendeo.cl/upload_articulos/8976/crop_66671507-6fbc-4b5a-80f5-000a43be90da_20240610175409.png" class="d-block w-100" alt="Oferta 2">
+    </div>
+    <div class="carousel-item">
+      <img src="https://static1.tiendeo.com.ar/images/tiendas/0/catalogos/sf-es_ar-36963-flyer-30144/paginas/med/00001.jpg" class="d-block w-100" alt="Oferta 2">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!-- Footer Section -->
+<footer class="bg-dark text-light text-center py-4 mt-5">
+  <div class="container">
+    <p class="mb-0">&copy; 2024 Tienda de Productos. Todos los derechos reservados.</p>
+    <p class="mt-2">Síguenos en: 
+      <a href="#" class="text-light">Facebook</a> |
+      <a href="#" class="text-light">Twitter</a> |
+      <a href="#" class="text-light">Instagram</a>
+    </p>
+  </div>
+</footer>
